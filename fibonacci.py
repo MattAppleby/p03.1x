@@ -29,3 +29,13 @@ def run_tests():
 
 # Edit this code
 def fib(n):
+    fib = (n)
+    fib2 = 0
+    fib1 = 0
+    fib = 1
+
+    for n in range (1, n):
+        fib2 = fib1
+        fib1 = fib
+        fib = fib1 + fib2
+    print(fib)

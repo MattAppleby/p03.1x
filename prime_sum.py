@@ -29,4 +29,14 @@ def run_tests():
 
 # Edit this code
 def add_primes(n):
+    count = 0
+    for i in range(2,n+1):
 
+        is_prime = True
+        for m in range(2, i):
+            if i % m == 0:
+                is_prime = False
+
+        if is_prime == True:
+            count = count + i
+    print(count)
